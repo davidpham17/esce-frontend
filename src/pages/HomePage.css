@@ -1,0 +1,1030 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homepage {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+/* Header Styles */
+.header {
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  font-size: 2rem;
+}
+
+.logo-text h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d5a27;
+  margin: 0;
+}
+
+.logo-text p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #2d5a27;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-login {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-login:hover {
+  background: #f5f5f5;
+}
+
+.btn-register {
+  background: #2d5a27;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-register:hover {
+  background: #1e3d1a;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e8f5e8 100%);
+  padding: 6rem 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #e8f5e8;
+  color: #2d5a27;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.hero-title .highlight {
+  color: #2d5a27;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.btn-explore {
+  background: #2d5a27;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s;
+}
+
+.btn-explore:hover {
+  background: #1e3d1a;
+  transform: translateY(-2px);
+}
+
+.arrow {
+  font-size: 1.2rem;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(135deg, #4a90e2 0%, #2d5a27 100%);
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1rem;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.group-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.group-icon {
+  font-size: 1.5rem;
+}
+
+.group-info p {
+  margin: 0;
+  font-weight: 500;
+  color: #333;
+}
+
+.group-info p:last-child {
+  color: #2d5a27;
+  font-size: 0.9rem;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.stat-number.green {
+  color: #2d5a27;
+}
+
+.stat-number.blue {
+  color: #4a90e2;
+}
+
+.stat-number.orange {
+  color: #ff8c00;
+}
+
+.stat-label {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Why Choose Us Section */
+.why-choose {
+  padding: 6rem 0;
+  background: #fff;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  background: #e8f5e8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto 1.5rem;
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Popular Tours Section */
+.popular-tours {
+  padding: 6rem 0;
+  background: #f8f9fa;
+}
+
+.popular-tours .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.popular-tours .section-header h2 {
+  margin-bottom: 0.5rem;
+}
+
+.popular-tours .section-header p {
+  margin: 0;
+  max-width: none;
+}
+
+.btn-view-all {
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-view-all:hover {
+  background: #357abd;
+}
+
+.tours-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.tour-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.tour-card:hover {
+  transform: translateY(-5px);
+}
+
+.tour-image {
+  height: 200px;
+  background: linear-gradient(135deg, #4a90e2 0%, #2d5a27 100%);
+  position: relative;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ff6b6b;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.tour-content {
+  padding: 1.5rem;
+}
+
+.tour-content h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.tour-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.stars {
+  color: #ffd700;
+  font-size: 1.1rem;
+}
+
+.rating {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.tour-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d5a27;
+  margin-bottom: 1.5rem;
+}
+
+.btn-details {
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.btn-details:hover {
+  background: #357abd;
+}
+
+/* Responsible Tourism Section */
+.responsible-tourism {
+  padding: 6rem 0;
+  background: #e8f5e8;
+}
+
+.tourism-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.tourism-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #2d5a27;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.tourism-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.tourism-text h2 .highlight {
+  color: #2d5a27;
+}
+
+.tourism-text p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.tourism-features {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.tourism-features li {
+  color: #2d5a27;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.btn-learn-more {
+  background: #2d5a27;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s;
+}
+
+.btn-learn-more:hover {
+  background: #1e3d1a;
+  transform: translateY(-2px);
+}
+
+.tourism-image {
+  position: relative;
+}
+
+.tourism-image .image-placeholder {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, #4a90e2 0%, #2d5a27 100%);
+  border-radius: 12px;
+}
+
+/* Group Discount Section */
+.group-discount {
+  padding: 6rem 0;
+  background: #fff;
+}
+
+.discount-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.discount-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ff8c00;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.discount-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.discount-header p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.discount-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.discount-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.discount-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.discount-circle {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #ff8c00 0%, #ff6b6b 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 auto 1.5rem;
+}
+
+.discount-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.discount-badge {
+  background: #e8f5e8;
+  color: #2d5a27;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.discount-cta {
+  background: linear-gradient(135deg, #e8f5e8 0%, #fff 100%);
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.discount-cta h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-create-group {
+  background: #2d5a27;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s;
+}
+
+.btn-create-group:hover {
+  background: #1e3d1a;
+  transform: translateY(-2px);
+}
+
+.btn-join-group {
+  background: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-join-group:hover {
+  background: #f5f5f5;
+  transform: translateY(-2px);
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 6rem 0;
+  background: #f8f9fa;
+}
+
+.testimonial-tag {
+  background: #e8e8ff;
+  color: #6b46c1;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.testimonials .section-header h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.testimonials .section-header p {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.stars {
+  color: #ffd700;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.quote-icon {
+  font-size: 3rem;
+  color: #e0e0e0;
+  margin-bottom: 1rem;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  background: #e8f5e8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #2d5a27;
+}
+
+.author-info h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.author-info p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.testimonials-cta {
+  text-align: center;
+}
+
+.btn-more-reviews {
+  background: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s;
+}
+
+.btn-more-reviews:hover {
+  background: #f5f5f5;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+  background: #2d5a27;
+  color: #fff;
+  padding: 5rem 0 2rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.footer-section h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.footer-section p {
+  color: #e0e0e0;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #3d6b35;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.newsletter-form input::placeholder {
+  color: #b0b0b0;
+}
+
+.btn-subscribe {
+  background: #fff;
+  color: #2d5a27;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-subscribe:hover {
+  background: #f0f0f0;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.certification {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #3d6b35;
+}
+
+.certification p:first-child {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #3d6b35;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.social-link:hover {
+  background: #3d6b35;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .header .container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 16px;
+  }
+
+  .nav {
+    gap: 1rem;
+  }
+
+  .hero {
+    padding: 4rem 0;
+    min-height: 70vh;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-stats {
+    gap: 2rem;
+  }
+
+  .popular-tours .section-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .tourism-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .hero {
+    padding: 3rem 0;
+    min-height: 60vh;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tours-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .discount-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image-placeholder {
+    height: 300px;
+  }
+
+  .tourism-image .image-placeholder {
+    height: 300px;
+  }
+}
